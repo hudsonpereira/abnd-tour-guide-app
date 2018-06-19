@@ -7,10 +7,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.hudson.tourguideapp.R;
+import com.example.hudson.tourguideapp.fragment.CompaniesFragment;
 import com.example.hudson.tourguideapp.fragment.PubsFragment;
+import com.example.hudson.tourguideapp.fragment.RestaurantsFragment;
+import com.example.hudson.tourguideapp.fragment.SchoolsFragment;
 
 public class LocationPagerAdapter extends FragmentPagerAdapter {
-    Context context;
+    private Context context;
 
     public LocationPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
@@ -21,11 +24,14 @@ public class LocationPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
+                return new PubsFragment();
             case 1:
+                return new CompaniesFragment();
             case 2:
+                return new RestaurantsFragment();
             case 3:
             default:
-                return new PubsFragment();
+                return new SchoolsFragment();
         }
     }
 
