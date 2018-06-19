@@ -35,7 +35,8 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
     public void onBindViewHolder(@NonNull LocationViewHolder holder, int position) {
         Location location = locations.get(position);
 
-        holder.setImageTItle(location.getTitle());
+        holder.setImageTitle(location.getTitle());
+        holder.setImageResource(location.getImageResource());
     }
 
     @Override
@@ -48,18 +49,23 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
 
         TextView locationTitle;
 
-        public LocationViewHolder(View itemView) {
+        LocationViewHolder(View itemView) {
             super(itemView);
 
             locationImage = itemView.findViewById(R.id.location_image);
             locationTitle = itemView.findViewById(R.id.location_title);
         }
 
-        public void setImageResource(int res) {
+        void setImageResource(int res) {
+            if (res == 0) {
+                locationImage.setVisibility(View.GONE);
+                return;
+            }
+
             locationImage.setImageResource(res);
         }
 
-        public void setImageTItle(String title) {
+        void setImageTitle(String title) {
             locationTitle.setText(title);
         }
     }

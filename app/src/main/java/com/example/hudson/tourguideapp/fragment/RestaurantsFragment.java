@@ -23,12 +23,10 @@ public class RestaurantsFragment extends Fragment{
 
         ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Lalai Restaurante", 0));
+        locations.add(new Location("Armábile Restaurante", 0));
+        locations.add(new Location("La Terrasse Café & Bistrô", 0));
+        locations.add(new Location("Dom Pimenta", 0));
 
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
         LocationAdapter locationAdapter = new LocationAdapter(locations);

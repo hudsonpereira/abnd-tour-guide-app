@@ -23,12 +23,10 @@ public class CompaniesFragment extends Fragment {
 
         ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
-        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Triata", 0));
+        locations.add(new Location("New Way", 0));
+        locations.add(new Location("Finch Soluções", 0));
+        locations.add(new Location("Liveon Solutions", 0));
 
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
         LocationAdapter locationAdapter = new LocationAdapter(locations);
