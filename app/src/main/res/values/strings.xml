@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
+    <string name="pubs">Pubs</string>
+    <string name="tech_companies">Tech Companies</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="tech_schools">Tech Schools</string>
 </resources>
