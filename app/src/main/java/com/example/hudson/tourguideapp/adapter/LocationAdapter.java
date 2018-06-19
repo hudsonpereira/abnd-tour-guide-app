@@ -9,9 +9,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.hudson.tourguideapp.Location;
 import com.example.hudson.tourguideapp.R;
 
+import java.util.List;
+
 public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.LocationViewHolder> {
+
+    private List<Location> locations;
+
+    public LocationAdapter(List<Location> locations) {
+        this.locations = locations;
+    }
 
     @NonNull
     @Override
@@ -24,12 +33,14 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
 
     @Override
     public void onBindViewHolder(@NonNull LocationViewHolder holder, int position) {
-        holder.setImageTItle("Hudson");
+        Location location = locations.get(position);
+
+        holder.setImageTItle(location.getTitle());
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return locations.size();
     }
 
     class LocationViewHolder extends RecyclerView.ViewHolder {

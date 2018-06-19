@@ -9,8 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.hudson.tourguideapp.Location;
 import com.example.hudson.tourguideapp.R;
 import com.example.hudson.tourguideapp.adapter.LocationAdapter;
+
+import java.util.ArrayList;
 
 public class SchoolsFragment extends Fragment{
     @Nullable
@@ -18,8 +21,18 @@ public class SchoolsFragment extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_with_recycler_view, container, false);
 
+        ArrayList<Location> locations = new ArrayList<>();
+
+        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Jack Pub", 0));
+        locations.add(new Location("Jack Pub", 0));
+
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
-        recyclerView.setAdapter(new LocationAdapter());
+        LocationAdapter locationAdapter = new LocationAdapter(locations);
+        recyclerView.setAdapter(locationAdapter);
 
         return rootView;
     }
