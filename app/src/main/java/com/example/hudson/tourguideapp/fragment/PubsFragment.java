@@ -23,11 +23,11 @@ public class PubsFragment extends Fragment{
 
         ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Jack Pub", R.drawable.jack));
-        locations.add(new Location("Armazen", R.drawable.armazen));
-        locations.add(new Location("Brazuka", R.drawable.brazuka));
-        locations.add(new Location("Empório São Lourenço", R.drawable.emporio_sao_lourenco));
-        locations.add(new Location("Dona Maria", R.drawable.donamaria));
+        locations.add(new Location(getString(R.string.jack_pub), R.drawable.jack));
+        locations.add(new Location(getString(R.string.armazen), R.drawable.armazen));
+        locations.add(new Location(getString(R.string.brazuka), R.drawable.brazuka));
+        locations.add(new Location(getString(R.string.emporio_sao_lourenco), R.drawable.emporio_sao_lourenco));
+        locations.add(new Location(getString(R.string.dona_maria), R.drawable.donamaria));
 
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
         LocationAdapter locationAdapter = new LocationAdapter(locations);

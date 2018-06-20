@@ -4,4 +4,21 @@
     <string name="tech_companies">Tech Companies</string>
     <string name="restaurants">Restaurants</string>
     <string name="tech_schools">Tech Schools</string>
+    <string name="triata">Triata</string>
+    <string name="new_way">New Way</string>
+    <string name="finch_solucoes">Finch Soluções</string>
+    <string name="liveon_solutions">Liveon Solutions</string>
+    <string name="jack_pub">Jack Pub</string>
+    <string name="armazen">Armazen</string>
+    <string name="brazuka">Brazuka</string>
+    <string name="emporio_sao_lourenco">Empório São Lourenço</string>
+    <string name="dona_maria">Dona Maria</string>
+    <string name="lalai_restaurante">Lalai Restaurante</string>
+    <string name="armabile_restaurante">Armábile Restaurante</string>
+    <string name="la_terrasse"><![CDATA[La Terrasse Café & Bistrô]]></string>
+    <string name="dom_pimenta">Dom Pimenta</string>
+    <string name="etec">ETEC</string>
+    <string name="fatec">FATEC</string>
+    <string name="anhanguera">Anhanguera</string>
+    <string name="unesp">UNESP</string>
 </resources>
