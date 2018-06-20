@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="location_image_width">100dp</dimen>
+    <dimen name="location_image_height">100dp</dimen>
+    <dimen name="location_title_margin_left">8dp</dimen>
+</resources>

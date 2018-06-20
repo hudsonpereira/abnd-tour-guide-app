@@ -9,16 +9,16 @@
         android:id="@+id/location_image"
         android:src="@drawable/ic_launcher_foreground"
         android:scaleType="fitCenter"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_width="@dimen/location_image_width"
+        android:layout_height="@dimen/location_image_height" />
 
     <TextView
         android:textStyle="bold"
         android:id="@+id/location_title"
         android:layout_gravity="center"
         android:text="@string/app_name"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="@dimen/location_title_margin_left"
+        android:layout_marginStart="@dimen/location_title_margin_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
